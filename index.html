@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Karşılama ve Saat</title>
+    <!-- Google Fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Google Fonts Poppins END -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload=getName()>
+    <!-- Prompt fonksiyonu çalışana kadar arkaplanda isim ve tarih kısmının boş gözükmemesi için yükleme ekranı tarzında bir div. İsim girdikten sonra "hide" class'ı eklenerek gizleniyor. -->
+    <div class="bg" id="loading">
+        <img class="image"
+            src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"
+            alt="kodluyoruz logo">
+        <img class="image" src="images/heart.png" alt="kalp">
+        <img class="image"
+            src="https://uploads-ssl.webflow.com/6097e0eca1e87557da031fef/609859a191abe5d64b17fed3_Patika%20logo-p-500.png"
+            alt="patika logo">
+    </div>
+    <main class="container">
+        <h1 class="container--baslik">kodluyoruz</h1>
+        <p class="container--text">Merhaba, <span id="name"></span> Hoşgeldin!</p>
+        <p class="container--tarih" id="tarih"></p>
+        <p class="container--text">Tarihinde React Native Eğitimi Javascript bölümündesiniz.</p>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
